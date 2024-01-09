@@ -1,4 +1,4 @@
-from huggingface_hub import CommitOperationAdd, CommitOperationDelete, configure_http_backend, HfApi, HfFileSystem
+from huggingface_hub import HfFileSystem
 from fs_test import repo_name
 import os
 hug_fs = HfFileSystem(token=os.environ.get('HF_TOKEN'))

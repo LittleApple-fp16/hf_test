@@ -1,11 +1,7 @@
 import os
-import pathlib
-from typing import Optional
-from pathlib import Path
 from textwrap import dedent
 from hbutils.system import TemporaryDirectory
-from huggingface_hub import CommitOperationAdd, CommitOperationDelete, configure_http_backend, HfApi, HfFileSystem
-from huggingface_hub.utils import RepositoryNotFoundError
+from huggingface_hub import CommitOperationAdd, HfApi, HfFileSystem
 
 _GITLFS = dedent("""
 *.7z filter=lfs diff=lfs merge=lfs -text
