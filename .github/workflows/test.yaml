@@ -14,7 +14,6 @@ jobs:
               - 'macos-latest'
             python-version:
               - '3.8'
-              - '3.10'
               - '3.10.6'
 
     steps:
@@ -40,6 +39,6 @@ jobs:
         HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: python fs_test.py
     - name: Run Post Test In New Thread
-    env:
-        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: python post_test.py
