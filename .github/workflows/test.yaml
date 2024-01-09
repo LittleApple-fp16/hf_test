@@ -3,7 +3,7 @@ name: HfFileSystem Test
 on: [push]
 
 jobs:
-  depstest:
+  test:
     name: HfFileSystem Test
     runs-on: ${{ matrix.os }}
     strategy:
